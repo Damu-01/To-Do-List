@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <style>
+        body{
+            /* background-color: blueviolet; */
+            background-image: linear-gradient(to bottom right, blueviolet, violet);
+            background-size: 1350px 700px;
+            background-repeat: no-repeat;
+        }
+        #div{
+            font-family:cursive;
+            margin-top:250px;
+            margin-left: 450px;
+            /* overflow-y: auto; */
+        }
+            
+        
+       
+        #list1{
+            overflow-y: auto;
+
+            /* background-color: aqua; */
+        }
+        #input{
+            font-family: cursive;
+            
+        }
+        .btn{
+            background-color: violet;
+            color: aliceblue;
+            padding: 3px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="div">
+    <h1>My To-Do List </h1>
+    <div><input type="text" name="" id="input" placeholder="Text..."><span id="list"><button class="btn">Add</button></span><span id="button"><button class="btn">Clear</button></span></div>
+    <div  id="list1" style="height: 300px; width: 300px; color:white; font-size: 20px; ">
+    
+    </div>
+
+</div>
+
+    <script>
+        document.getElementById('button').addEventListener('click',()=>{
+            // alert('hii');
+            document.getElementById('list1').innerHTML = '';
+        })
+
+        document.getElementById('list').addEventListener('click',()=>{
+            box = document.getElementById('input');
+            result = document.getElementById('list1');
+            // alert('hiii')
+
+            result.innerHTML +='<li>'+box.value+'</li>'+'<br>';
+        
+                
+                
+            
+            
+
+
+                if(box.value == ""){
+                alert('Enter your list');
+                result.style.display = 'block';
+
+                // result.style.display = "none";
+            }
+               
+        })
+
+    
+    </script>
+</body>
+</html>
