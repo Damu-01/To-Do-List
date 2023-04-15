@@ -10,13 +10,14 @@
         body{
             /* background-color: blueviolet; */
             background-image: linear-gradient(to bottom right, blueviolet, violet);
-            background-size: 1350px 700px;
+        background-size:2000px 2000px;
             background-repeat: no-repeat;
+            text-align: center;
         }
         #div{
-            font-family:cursive;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             margin-top:250px;
-            margin-left: 450px;
+            width: 80%;
             /* overflow-y: auto; */
         }
             
@@ -24,12 +25,9 @@
        
         #list1{
             overflow-y: auto;
-
-            /* background-color: aqua; */
         }
         #input{
-            font-family: cursive;
-            
+            border: 2px solid black;
         }
         .btn{
             background-color: violet;
@@ -63,11 +61,6 @@
             result.innerHTML +='<li>'+box.value+'</li>'+'<br>';
         
                 
-                
-            
-            
-
-
                 if(box.value == ""){
                 alert('Enter your list');
                 result.style.display = 'block';
